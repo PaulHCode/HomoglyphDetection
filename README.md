@@ -9,6 +9,7 @@ This module is comprised of cmdlets to detect homoglyphs in code or other docume
 - Remove-Uninteresting - Removes items that are not homoglyphs of other items in the list
 - Find-HomoglyphsInRepo - Scans the specified repo for homoglyphs
 - Find-HomoglyphsInOrg - Scans the specified org's repos for homoglyphs
+- Convert-RandomCharacters - Replaces characters in the InputString with similar looking characters
 
 ## Examples
 ```PowerShell
