@@ -5,10 +5,10 @@
 This module is comprised of cmdlets to detect homoglyphs in code or other documents.
 
 ## Functions
-- Get-HomoglyphsInFile
-- Remove-Uninteresting
-- Find-HomoglyphsInRepo
-- Find-HomoglyphsInOrg
+- Get-HomoglyphsInFile - Gets homoglyphs in the specified file. The user must specify how to parse the file using parse elements, regular expressions, or pre-defined methods.
+- Remove-Uninteresting - Removes items that are not homoglyphs of other items in the list
+- Find-HomoglyphsInRepo - Scans the specified repo for homoglyphs
+- Find-HomoglyphsInOrg - Scans the specified org's repos for homoglyphs
 
 ## Examples
 ```PowerShell
