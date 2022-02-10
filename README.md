@@ -20,23 +20,23 @@ This module is comprised of cmdlets to detect homoglyphs in code or other docume
     123…    123      customRegex .\testTextFile.txt
     １23    123      customRegex .\testTextFile.txt
 
-    Found all the number values that were separated by text that were homoglyphs
+    #Found all the number values that were separated by text that were homoglyphs
 
 
     Get-HomoglyphsInFile -File .\testfile.txt -ParseElements @(' ','.',',',"`n") -RemoveUninteresting
     
-    Scans a typical text file for homoglyphs
+    #Scans a typical text file for homoglyphs
 
 
     ls testfi*.ps1 | Get-HomoglyphsInFile  -Predefined PowerShell -RemoveUninteresting
 
-    Get all files like testfi*.ps1 and remove any homoglyphs across all matching files
+    #Get all files like testfi*.ps1 and remove any homoglyphs across all matching files
 
 
     $results = ls testfi*.ps1 | %{Get-HomoglyphsInFile $_  -Predefined PowerShell -RemoveUninteresting}
     $results.name | group | select count,name
 
-    Get all files like test*.ps1 and remove homoglyphs. Group them to show which items were found, and what they're homoglyphs of and how many of each are found.
+    #Get all files like test*.ps1 and remove homoglyphs. Group them to show which items were found, and what they're homoglyphs of and how many of each are found.
 
 
     $results = @()
@@ -49,6 +49,6 @@ This module is comprised of cmdlets to detect homoglyphs in code or other docume
     }
     $refinedResults = $refinedResults -Array $results
 
-    Searches all files in C:\myFolder - This is about 130 times faster than scanning the same repo with Find-HomoglyphsInRepo
+    #Searches all files in C:\myFolder - This is about 130 times faster than scanning the same repo with Find-HomoglyphsInRepo
 ```
 
