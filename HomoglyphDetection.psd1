@@ -9,25 +9,25 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule = '.\HomoglyphDetection.psm1'
+    RootModule        = '.\HomoglyphDetection.psm1'
 
     # Version number of this module.
-    ModuleVersion = '1.0.0'
+    ModuleVersion     = '1.0.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
 
     # ID used to uniquely identify this module
-    GUID = '5e9dcb73-36f3-43bb-902b-2e3a8ab5cd62'
+    GUID              = '5e9dcb73-36f3-43bb-902b-2e3a8ab5cd62'
 
     # Author of this module
-    Author = 'Paul Harrison'
+    Author            = 'Paul Harrison'
 
     # Company or vendor of this module
     #     CompanyName       = ''
 
     # Copyright statement for this module
-    Copyright = '(c) Paul Harrison. All rights reserved.'
+    Copyright         = '(c) Paul Harrison. All rights reserved.'
 
     # Description of the functionality provided by this module
     # Description = ''
@@ -51,7 +51,7 @@
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
-    RequiredModules @('PowerShellForGitHub') @('PowerShellForGitHub')
+    RequiredModules   = @('PowerShellForGitHub') 
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
@@ -69,16 +69,16 @@
     # NestedModules = @()
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExpor@('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')#t = @('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')
+    FunctionsToExport = @('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')#t = @('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport = @()
+    CmdletsToExport   = @()
 
     # Variables to export from this module
     VariablesToExport = '*'
 
     # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-    AliasesToExport = @()
+    AliasesToExport   = @()
 
     # DSC resources to export from this module
     # DscResourcesToExport = @()
@@ -90,7 +90,7 @@
     # FileList = @()
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-    PrivateData = @{
+    PrivateData       = @{
 
         PSData = @{
 
