@@ -69,7 +69,7 @@
     # NestedModules = @()
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = @('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')#t = @('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')
+    FunctionsToExport = @('Get-HomoglyphsInFile', 'Find-HomoglyphsInOrg', 'Find-HomoglyphsInRepo', 'Convert-RandomCharacters', 'Remove-Uninteresting')#t = @('Get-HomoglyphsInFile.ps1', 'Find-HomoglyphsInOrg.ps1', 'Find-HomoglyphsInRepo.ps1', 'Convert-RandomCharacters.ps1', 'Remove-Uninteresting.ps1')
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
     CmdletsToExport   = @()
